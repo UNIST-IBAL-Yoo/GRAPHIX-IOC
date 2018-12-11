@@ -44,3 +44,8 @@ getPress1 {
 	out "%s";
 	in "%39c";
 }
+
+getPress2 {
+	out "%s";
+	in "%39c";
+}

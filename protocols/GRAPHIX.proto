@@ -1,0 +1,46 @@
+Terminator = EOT;
+
+
+# Basic Commands
+
+readCMD {
+	out "%s";
+	in "%39c";
+}
+
+writeCMD {
+	out "%s";
+	in "%39c";
+}
+
+testCMD {
+	out "%#020x";
+	in "%39c";
+}
+
+# Sample Commands
+
+getVersion {
+	out "%s";
+	in "%39c";
+}
+
+getSN {
+	out "%s";
+	in "%39c";
+}
+
+getPN {
+	out "%s";
+	in "%39c";
+}
+
+getUnit {
+	out "%s";
+	in "%39c";
+}
+
+getPress1 {
+	out "%s";
+	in "%39c";
+}

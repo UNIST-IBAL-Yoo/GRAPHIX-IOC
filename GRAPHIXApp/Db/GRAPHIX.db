@@ -1,0 +1,97 @@
+#GRAPHIX 3 Database File
+
+
+# --- Read Command
+record(waveform, "$(DEVICE_NAME):readCMD")
+{
+	field(DESC, "Send Read Command and Receive Value")
+	field(DTYP, "stream")
+	field(INP, "@GRAPHIX.proto readCMD $(PORT)")
+	field(PINI, "YES")
+	field(FTVL, "UCHAR")
+	field(NELM, "200")
+}
+
+
+# --- Write Command
+record(waveform, "$(DEVICE_NAME):writeCMD")
+{
+	field(DESC, "Send Write Command")
+	field(DTYP, "stream")
+	field(INP, "@GRAPHIX.proto writeCMD $(PORT)")
+	field(PINI, "YES")
+	field(FTVL, "UCHAR")
+	field(NELM, "200")
+}
+
+
+# --- Version Command
+record(waveform, "$(DEVICE_NAME):getVersion")
+{
+	field(DESC, "Get Hardware and Software Version")
+	field(DTYP, "stream")
+	field(INP, "@GRAPHIX.proto getVersion $(PORT)")
+	field(PINI, "YES")
+	field(FTVL, "UCHAR")
+	field(NELM, "200")
+}
+
+
+# --- Serial Number Command
+record(waveform, "$(DEVICE_NAME):getSN")
+{
+	field(DESC, "Get Serial Number")
+	field(DTYP, "stream")
+	field(INP, "@GRAPHIX.proto getSN $(PORT)")
+	field(PINI, "YES")
+	field(FTVL, "UCHAR")
+	field(NELM, "200")
+}
+
+
+# --- Part Number Command
+record(waveform, "$(DEVICE_NAME):getPN")
+{
+	field(DESC, "Get Part Number")
+	field(DTYP, "stream")
+	field(INP, "@GRAPHIX.proto getPN $(PORT)")
+	field(PINI, "YES")
+	field(FTVL, "UCHAR")
+	field(NELM, "200")
+}
+
+
+# --- Unit Command
+record(waveform, "$(DEVICE_NAME):getUnit")
+{
+	field(DESC, "Get Display Unit")
+	field(DTYP, "stream")
+	field(INP, "@GRAPHIX.proto getUnit $(PORT)")
+	field(PINI, "YES")
+	field(FTVL, "UCHAR")
+	field(NELM, "200")
+}
+
+
+# --- Pressure Ch. 1 Command
+record(waveform, "$(DEVICE_NAME):getPress1")
+{
+	field(DESC, "Get Pressure Data Ch.1")
+	field(DTYP, "stream")
+	field(INP, "@GRAPHIX.proto getPress1 $(PORT)")
+	field(PINI, "YES")
+	field(FTVL, "UCHAR")
+	field(NELM, "200")
+}
+
+
+record(waveform, "$(DEVICE_NAME):test")
+{
+	field(DESC, "Get Pressure Data Ch.1")
+	field(DTYP, "stream")
+	field(INP, "@GRAPHIX.proto testCMD $(PORT)")
+	field(PINI, "YES")
+	field(FTVL, "LONG")
+	field(NELM, "200")
+}
+

@@ -85,11 +85,12 @@ record(waveform, "$(DEVICE_NAME):getPress1")
 }
 
 
-record(waveform, "$(DEVICE_NAME):test")
+# --- Pressure Ch. 1 Command
+record(waveform, "$(DEVICE_NAME):getPress2")
 {
-	field(DESC, "Get Pressure Data Ch.1")
+	field(DESC, "Get Pressure Data Ch.2")
 	field(DTYP, "stream")
-	field(INP, "@GRAPHIX.proto testCMD $(PORT)")
+	field(INP, "@GRAPHIX.proto getPress2 $(PORT)")
 	field(PINI, "YES")
 	field(FTVL, "LONG")
 	field(NELM, "200")

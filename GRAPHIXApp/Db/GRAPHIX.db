@@ -92,7 +92,7 @@ record(waveform, "$(DEVICE_NAME):getPress2")
 	field(DTYP, "stream")
 	field(INP, "@GRAPHIX.proto getPress2 $(PORT)")
 	field(PINI, "YES")
-	field(FTVL, "LONG")
+	field(FTVL, "UCHAR")
 	field(NELM, "200")
 }
 

@@ -20,7 +20,6 @@ GRAPHIX_DBD += base.dbd
 GRAPHIX_DBD += asyn.dbd
 GRAPHIX_DBD += stream.dbd
 GRAPHIX_DBD += drvAsynSerialPort.dbd
-#GRAPHIX_DBD += calc.dbd
 
 # Add all the support libraries needed by this IOC
 #GRAPHIX_LIBS += xxx

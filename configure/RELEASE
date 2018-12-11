@@ -43,4 +43,3 @@ EPICS_BASE = /home/ykh/EPICS/epics-base
 
 ASYN=${HOME}/EPICS/support/asyn
 STREAM=${HOME}/EPICS/support/stream
-#CALC=${HOME}/EPICS/support/calc
